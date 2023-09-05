@@ -1,0 +1,40 @@
+<html>
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+<head>
+   <style>
+      table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse; 
+      }
+      td, th {
+         padding: 10px;
+      }
+      #reportTableContainer {
+         padding:50px;
+      }
+   </style>
+</head>
+<body>
+   <header class="top-bar">
+      <h1>
+         Manage Reports
+      </h1>
+      <div class="logo">
+         <a href="index.html">
+            <img src="img/Picture2.svg">
+        </a>
+      </div>
+   </header>
+   
+   <h3>Generate Reports</h3>
+   <div>
+      <button id="ProfitReport", onclick="BeerProfitabiltyReport()">Beer Profitability</button>
+      <button id="CostReport", onclick="RecipeCostReport()"> Recipe Cost</button>
+      <button id="SupplierIngredientsReport", onclick="SupplierIngredientsReport()">Supplier Ingredients</button>
+      <button id="IngredientReport", onclick="IngredientCostReport()">Ingredient Cost</button>
+      <button id="RecipeReport", onclick="RecipeUsageReport()">Recipe Usage</button>
+   </div>
+   <div id="reportTableContainer"></div>
+</body>
+</html>

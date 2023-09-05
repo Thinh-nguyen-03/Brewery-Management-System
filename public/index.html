@@ -1,0 +1,77 @@
+<html>
+<script src="app.js"></script>
+<head>
+   <link rel="stylesheet" href="style.css">  
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse; 
+      }
+      td, th {
+         padding: 10px;
+      }
+   </style>
+</head>
+<body>
+   <header class="top-bar">
+      <h1>
+         Craft Brewery Manager
+      </h1>
+      <div class="logo">
+         <img src="img/Picture2.svg">
+      </div>
+   </header>
+      
+   </div>
+   <div class="database-controls">
+      <h1>Database Status</h1>
+      <div class="status-container">
+         <div class="status-indicator disconnected"></div>
+         <span id="status-text">Disconnected</span>
+         <span id="error-text"></span>
+      </div>
+      <button id="connectBtn" onclick="Connect()">Connect</button>
+      <button id="disconnectBtn" onclick="Disconnect()" disabled=true>Disconnect</button>
+   </div>
+   
+   <div class="icon-container">
+      <a href="suppliers.html" class="icon-link">
+         <div class="circle">
+               <img src="img/Dolly.svg" alt="Icon 1">   
+         </div>
+         <span class="icon-desc">Suppliers</span>
+      </a>
+      <a href="brews.html" class="icon-link">
+         <div class="circle">
+               <img src="img/Beer.svg" alt="Icon 2">
+         </div>
+         <span class="icon-desc">Brews</span>
+      </a>
+      <a href="recipies.html" class="icon-link">
+         <div class="circle">
+               <img src="img/Clipboard.svg" alt="Icon 3">
+         </div>
+         <span class="icon-desc">Recipies</span>
+      </a>
+      <a href="ingredients.html" class="icon-link">
+         <div class="circle">
+               <img src="img/Grain.svg" alt="Icon 4">
+         </div>
+         <span class="icon-desc">Ingredients</span>
+      </a>
+      <a href="reports.html" class="icon-link">
+         <div class="circle">
+               <img src="img/Data.svg" alt="Icon 5">
+         </div>
+         <span class="icon-desc">Reports</span>
+      </a>
+      
+</div>
+
+</body>
+</html>

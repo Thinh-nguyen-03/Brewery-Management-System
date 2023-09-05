@@ -1,0 +1,62 @@
+<html>
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse; 
+        }
+        td, th {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <h1>
+            Manage Suppliers
+        </h1>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/Picture2.svg">
+            </a>
+        </div>
+    </header>
+
+    <h3>Suppliers</h3>
+    <button id="Supplier" onclick="ReadSuppliers()"> Get Suppliers </button>        
+    <div id="supplierTableContainer"></div>
+
+    <h3>Update/Create Supplier</h3>
+    <i>If creating supplier, Supplier ID field will be ignored.</i>
+    <div>
+        <div class="form-group">
+            <label for="supplier_ID">Supplier ID:</label>
+            <input type="number" id="supplier_ID" name="supplier_ID" placeholder="Supplier ID" size="3">
+        </div>
+        <div class="form-group">
+            <label for="supplier_Name">Supplier Name:</label>
+            <input type="text" id="supplier_Name" name="supplier_Name" placeholder="Supplier Name">
+        </div>
+        <div class="form-group">
+            <label for="supplier_Phone">Supplier Phone:</label>
+            <input type="text" id="supplier_Phone" name="supplier_Phone" placeholder="(123) 456-7890">
+        </div>
+        <button id="updateSuppliers"  onclick="UpdateSupplier()">Update</button>
+        <button id="createSuppliers"  onclick="CreateSupplier()">Create New</button>
+    </div>
+
+    <h3>Select or Delete Supplier by ID</h3>
+    <div>
+        <div class="form-group">
+            <label for="supplierId">Supplier ID:</label>
+        <input type="number" id="supplierId" name="supplierId" placeholder="Supplier ID">
+        </div>
+        <button id="supplierIdSubmit" onclick="ReadSupplier()">Submit</button>
+        <!-- <button id="supplierIdDeleteSubmit" onclick="DeleteSupplier()">Delete</button>  -->
+        <button id="supplierIdDeleteSubmit" onclick="async function deleteAndRefresh() { if (window.confirm('Are you sure you want to delete this supplier? \nDoing so may delete any associated relationships.')) { await DeleteSupplier(); } } deleteAndRefresh();">Delete</button> 
+    </div>
+    <div id="supplierIdTableContainer"></div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+<head>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse; 
+        }
+    td, th {
+        padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <h1>
+            Manage Ingredients
+        </h1>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/Picture2.svg">
+            </a>
+        </div>
+    </header>
+
+    <!-- List of Ingredients -->
+    <h3>Ingredients</h3>
+    <button id="Ingredient" onclick="getIngredients()"> Get Ingredients </button><br>           
+    <div id="ingredientTableContainer"></div>
+
+    <!-- Form to update or create new Ingredient -->
+    <h3>Update/Create Ingredient</h3>
+    <i>If creating ingredient, Ingredient ID field will be ignored.</i>
+    <div>
+        <div class="form-group">
+            <label for="ingredient_ID">Ingredient ID:</label>
+            <input type="number" id="ingredient_ID" name="ingredient_ID" placeholder="Ingredient ID" size="3" required>
+        </div>
+        <div class="form-group">
+            <label for="ingredient_Name">Ingredient Name:</label>
+            <input type="text" id="ingredient_Name" name="ingredient_Name" placeholder="Ingredient Name">
+        </div>
+        <div class="form-group">
+            <label for="supplier_ID">Supplier ID:</label>
+            <input type="number" id="supplier_ID" name="supplier_ID" placeholder="Supplier ID">
+        </div>
+        <div class="form-group">
+            <label for="unit_Price">Unit Price:</label>
+            <input type="number" id="unit_Price" name="unit_Price" placeholder="Unit Price">
+        </div>
+        <div class="form-group">
+            <label for="unit">Unit:</label>
+            <input type="text" id="unit" name="unit" placeholder="Unit">
+        </div>
+        <div class="form-group">
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock" placeholder="Stock">
+        </div>
+        <!-- Update and Create New buttons -->
+        <!-- Both buttons update the ingredient fields and refresh the ingredients list when clicked -->
+        <!-- Update button -->
+        <button id="updateIngredients" onclick="updateIngredientFields(); getIngredients();">Update</button>
+        <!-- Create New button -->
+        <button id="createIngredients" onclick="createIngredient(document.getElementById('ingredient_Name').value, document.getElementById('supplier_ID').value, document.getElementById('unit_Price').value, document.getElementById('unit').value, document.getElementById('stock').value); getIngredients();">Create New</button>
+    </div>
+
+    <!-- Form to select or delete ingredient by ID -->
+    <h3>Select or Delete Ingredient by ID</h3>
+    <div>
+        <div class="form-group">
+            <label for="ingredientId">Ingredient ID:</label>
+            <input type="number" id="ingredientId" name="ingredientId" placeholder="Ingredient ID">
+        </div>
+        <!-- Submit button, calls getIngredientById() function with the entered ingredient ID when clicked -->
+        <button id="ingredientIdSubmit" onclick="getIngredientById()">Submit</button>
+        <!-- Delete button -->
+        <button id="ingredientIdDeleteSubmit" onclick="async function deleteAndRefresh() { if (window.confirm('Deleting an ingredient will cause a cascade delete. Are you sure you want to proceed?')) { await deleteIngredient(document.getElementById('ingredientId').value); getIngredients(); } } deleteAndRefresh();">Delete</button> 
+    </div>
+    <!-- Container where the selected ingredient's details will be inserted -->
+    <div id="ingredientIdTableContainer"></div>
+</body>
+</html>

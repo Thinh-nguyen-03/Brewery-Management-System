@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Sansation-Bold';
+    src: url('Sansation-Bold.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(250, 214, 165, .75);
+    overflow-x: hidden; 
+}
+
+img {
+    width: 75px;
+}
+
+.top-bar {
+    background-color: #0B0C13;
+    color: rgb(250, 214, 165);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Sansation-Bold';
+}
+.top-bar h1 {
+    margin: 0;
+    padding-left: 35px;
+    font-size: 40px; 
+}
+
+.logo img {
+    width: 100px;
+    height: 100px; 
+    margin-left: 15px;
+}
+
+.website-title {
+    margin: 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(252, 203, 123, .75);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    margin-bottom: 20;
+}
+
+.circle img {
+    width: 120px;
+    height: 120px;
+}
+
+.section {
+    height: 800px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.icon-desc {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Sansation-Bold';
+    color: #854800;
+}
+
+a {
+    text-decoration: none;
+    font-size: xx-large;
+    color:black;
+    font-weight: bold;
+}
+
+.database-controls {
+    font-family: 'Sansation-Bold';
+    padding: 20px;
+    padding-left: 45px;
+}
+
+.status-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.status-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;   
+}
+
+.connected {
+    background-color: green;
+}
+
+.disconnected {
+    background-color: red;
+}
+
+button {
+    margin-right: 5px;
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Sansation-Bold';
+    color: #854800;
+    background-color: rgba(252, 203, 123, .75);
+}
+
+button:hover {
+    background-color: rgba(252, 203, 123, 1);
+}
+
+#connectBTN, #disconnectBTN {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+#updateSuppliers, #updateIngredients, #updateRecipe, #recipeIdSubmit, #recipeIngredientIdDeleteSubmit, 
+#getBrew, #supplierIdSubmit, #ingredientIdSubmit {
+    margin-left: 45px;
+}
+
+#Supplier, #Ingredient, #Recipe { 
+    margin-top: 0px;
+    margin-left: 45px;
+}
+
+#ProfitReport {
+    margin-top: 0px;
+    margin-left: 45px;
+}
+
+#ProfitReport, #CostReport, #SupplierIngredientsReport, 
+#IngredientReport, #RecipeReport {
+    margin-top: 0px;
+}
+
+h3 {
+    margin-left: 45px;
+    font-family: 'Sansation-Bold';
+    color: #854800;
+    font-size: 25px;
+}
+
+label, input {
+    margin-left: 45px;
+    font-family: 'Sansation-Bold';
+}
+
+i {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    font-family: 'Sansation-Bold';
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 0 0 130px; 
+}
+
+.form-group input {
+    flex: 1;
+    max-width: 200px;
+    margin-left: 30px;
+}
+
+#ingredientTableContainer, #ingredientIdTableContainer, #supplierTableContainer, 
+#supplierIdTableContainer, #brewTableContainer, #recipeTableContainer, #reportTableContainer {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    font-family: 'Sansation-Bold';
+}
+
+#ingredientTableContainer th {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#ingredientTableContainer td {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#ingredientIdTableContainer th {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#ingredientIdTableContainer td {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#brewTableContainer th {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#brewTableContainer td {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#recipeTableContainer th {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#recipeTableContainer td {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#supplierTableContainer th {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#supplierTableContainer td {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#reportTableContainer th {
+    border: 2px solid #854800;
+    color: black;
+}
+
+#reportTableContainer td {
+    border: 2px solid #854800;
+    color: black;
+}
