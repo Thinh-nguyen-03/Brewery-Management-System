@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.1"
+  },
+  "name": "craftbrewmanager_group7",
+  "description": "1. Install PostgreSQL: Download and install PostgreSQL from the official website for Windows. During the installation process, do not change the default localhost port (5432) and username (postgres). Remember the password you set for the default database user \"postgres\" as you will need it for step 4.\r 2. Start PostgreSQL Server: After the installation, start the PostgreSQL server. You can usually find it as a service named \"PostgreSQL\" in the list of Windows services. If it's not running, start it.\r 3. Install required packages with \r                 npm install pg dotenv\r 4. To run, execute the following command in the terminal, which includes arguments for the database you want to run this on, and the password you've set\r ```\r   node main.js {your db name, default \"postgres\"} {db password}\r ```",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
