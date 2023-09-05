@@ -1,10 +1,10 @@
-# CraftBrewManager_Group7
+# Brewery-Management-System
 
 # README
 
 ## Introduction
 
-Local Application for a Database for Craft Brewery Manager
+Local Application for a Database for the Brewery Management System
 
 ## Requirements
 
@@ -18,17 +18,17 @@ This code has been run and tested on:
 ## External Deps
 
 - pgAdmin 4 - https://www.pgadmin.org
-- Git - Download latest version at https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- Git - Download the latest version at https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 - GitHub Desktop (Not needed, but HELPFUL) at https://desktop.github.com/
 
 # Pre-requisites
 
-## Installing PostgresSQL
+## Installing PostgreSQL
 
 Please go to https://www.postgresql.org/download/ and download the most recent version for the desired platform.
 Once downloaded, follow the Download Wizard to complete the process.
 
-For the purposes of this project, the port the database will be set on will be the default {PORT : 5432}.
+For the purposes of this project, the port the database will be set on will be the default {PORT: 5432}.
 
 ## Installing Node.js
 
@@ -54,13 +54,13 @@ Now install Express in the myapp directory and save it in the dependencies list.
 
 Download this code repository by using git:
 
-`git clone https://github.com/Summer23-CSCE-310-Database-Systems/CraftBrewManager_Group7.git`
+`https://github.com/Thinh-nguyen-03/Brewery-Management-System.git`
 
 ## Execute Code and Run the app
 
-Run the following code in Powershell if using windows or the terminal using Linux/Mac
+Run the following code in Powershell if using Windows or the terminal using Linux/Mac
 
-`cd CraftBrewManager_Group7`
+`cd Brewery-Management-System`
 
 `node index.js {dbname} {password} `
 
@@ -76,17 +76,17 @@ The application can be seen using a browser and navigating to http://localhost:5
 For the purposes of this project, this also resets the database to allow for a constant testing experience.
 Please connect to the database before attempting to access data.
 
-2. At any time, disconnection from the database by clicking the "Disconnect" button.
+2. At any time, disconnect from the database by clicking the "Disconnect" button.
 
 3. To reconnect to the database after disconnecting, relaunch the application.
 
-4. Once connected, the server will auto-populate the necessary databases and their relevant informations.
+4. Once connected, the server will auto-populate the necessary databases and their relevant information.
 
 5. From here, it is now possible to access different pages and utilize their CRUD features.
 
 ## Support
 
-The support of this app is currently under development and there are small changes left to reach it's final version. The future goals of this application:
+The support of this app is currently under development and there are small changes left to reach its final version. The future goals of this application:
 
 - Cloud-based deployment
 - TBD
